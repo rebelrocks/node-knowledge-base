@@ -1,0 +1,16 @@
+{
+  "name": "node_knowledgebase",
+  "version": "1.0.0",
+  "description": "Node JS Knowledge Base (NKB)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "dev": "node index"
+  },
+  "author": "Anil kumar Gupta",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
