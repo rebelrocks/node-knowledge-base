@@ -18,8 +18,11 @@ const server = http.createServer((request, response) => {
   if (request.url === '/calculator') {
     var a=90;
     var b=459;
-    console.log("Addition of 50 and 10 is "+ calculator.addtion(a,b));
-
+    console.log("Addition of 50 and 10 is "+ calculator.addition(a,b));
+    var content = "Addition of 50 and 10 is "+ calculator.addition(a,b);
+    
+    response.writeHead(200, { 'Content-Type': 'text/html' });
+        response.end(content);
   }
 });
 
